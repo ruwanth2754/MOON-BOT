@@ -1,0 +1,31 @@
+{
+  "name": "MOON-BOT",
+  "version": "1.0.0",
+  "description": "simple whatsapp bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name MOON-BOT",
+    "stop": "pm2 stop MOON-BOT",
+    "log": "pm2 log",
+    "debug": "node inspect index.js"
+  },
+  "author": "lasith ruwantha",
+  "license": "ISC",
+  "dependencies": {
+    "@dark-yasiya/scrap": "^1.0.1",
+    "@hapi/boom": "^10.0.1",
+    "@vreden/youtube_scraper": "^1.2.8",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "axios": "^1.13.2",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.1.2",
+    "child_process": "^1.0.2",
+    "fb-downloader-scrapper": "^3.0.1",
+    "fs": "^0.0.1-security",
+    "g-i-s": "^2.1.7",
+    "megajs": "^1.3.9",
+    "path": "^0.12.7",
+    "pino": "^10.1.0",
+    "pm2": "^6.0.14"
+  }
+}
